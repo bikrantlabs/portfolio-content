@@ -1,0 +1,4 @@
+{
+  "projects": ["projects/atlas-case-study.mdx", "projects/signal-cli.mdx"],
+  "articles": ["articles/writing-with-mdx.mdx"]
+}
