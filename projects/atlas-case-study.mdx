@@ -1,0 +1,53 @@
+---
+title: "Atlas Planning Surface"
+description: "A sample project entry showing how longform case studies can live in local MDX files."
+date: "2026-04-18"
+status: "live"
+tags: ["Next.js", "TypeScript", "Design Systems"]
+cover: "/images/projects/atlas-cover.svg"
+liveUrl: "https://example.com"
+githubUrl: "https://github.com/example/atlas"
+featured: true
+---
+
+## The brief
+
+Atlas started as a dashboard request, but the real problem was editorial clarity. The team needed a way to scan milestones, release risk, and experiment health without reading a wall of status notes.
+
+<Callout type="tip">
+  This project entry exists mainly to validate the MDX pipeline, but it already uses the same structure future case studies will use.
+</Callout>
+
+## What changed
+
+- A lighter visual system replaced the original dark template look.
+- Dense release information was grouped into calmer, more readable layers.
+- Reusable primitives made the interface feel consistent without feeling rigid.
+
+## Interface notes
+
+<BlogImage
+  src="/images/projects/atlas-detail.svg"
+  alt="Atlas planning surface preview"
+  caption="A placeholder visual for the sample project. In production this will become a real screenshot or product still."
+/>
+
+The final goal is a page that feels closer to a polished article than to a README. Each section earns its place, and the content can mix prose, media, callouts, and code without changing the page template itself.
+
+## Tech decisions
+
+I used <Tag>MDX</Tag> for local authoring and <Tag>App Router</Tag> for route-level rendering, so new projects can be published by adding one file to the repository.
+
+```ts
+export async function generateStaticParams() {
+  const projects = await getAllProjects();
+
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+```
+
+## Why this matters
+
+Once the MDX layer is in place, the portfolio stops being a hardcoded homepage and becomes a small publishing system for project storytelling.

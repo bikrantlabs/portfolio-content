@@ -1,0 +1,10 @@
+{
+  "title": "Building a portfolio that feels closer to a working notebook than a pitch deck.",
+  "date": "2026",
+  "motto": [
+    "Frontend systems that stay readable as they grow.",
+    "Calm, editorial interfaces with enough motion to feel alive.",
+    "Case studies and write-ups that explain decisions, not just outcomes."
+  ],
+  "description": "Selected projects, implementation details, and notes on how I think through UI decisions."
+}
